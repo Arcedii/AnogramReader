@@ -1,32 +1,56 @@
-Aceasta este o aplicație Java care găsește și grupează anagrame dintr-un fișier text.
+# 📜 Anagram Reader (Java)
 
-Cum să compilezi și să rulezi programul
+Un utilitar simplu în Java care citește cuvinte dintr-un fișier text (`sample.txt`), le grupează în **anagrame** (ignorând majusculele) și le afișează pe linii separate.  
+Fiecare grup este sortat alfabetic (fără diferență între litere mari și mici), iar ordinea grupurilor reflectă **prima apariție** în fișier.
 
-Cerințe:
+---
 
-Am folosit mediul de dezvoltare IntelliJ IDEA
+## 📂 Structura proiectului
 
-JDK 24.0.1 (sau o versiune mai veche este de asemenea acceptabilă)
+Structura proiectului
+anagram-grouper/
+├─ Main.java # codul principal Java
+└─ sample.txt # fișier de intrare (un cuvânt pe linie, UTF-8)
 
-Compilare:
+---
 
-Deschide un terminal sau linia de comandă.
+## ⚙️ Cerințe
 
-Navighează în directorul unde se află fișierul Main.java.
+- **Java JDK 8+** (programul a fost creat pe versiunea **JDK 24**)
+- Orice IDE Java (ex: _IntelliJ IDEA Community_)
+- Sistem de operare: **Windows / macOS / Linux**
 
-Execută următoarea comandă pentru compilare: javac Main.java
-Sau pur și simplu rulează fișierul direct din IntelliJ IDEA (clasa Main).
+---
 
-Rulare:
+## 🚀 Cum rulezi
 
-Asigură-te că fișierul de intrare numit sample.txt se află în același director cu fișierul compilat Main.class.
-Exemplu de conținut al fișierului sample.txt:
-act  
-cat  
-tree  
-race  
-care  
-acre  
-bee  
-Rulează programul — acesta va afișa grupurile de anagrame în consolă, fiecare grup pe o linie separată.
+### 🔹 Metoda 1 – din IDE
 
+1. Deschide proiectul în **IntelliJ IDEA** sau alt IDE Java.
+2. Asigură-te că `sample.txt` este în directorul proiectului.
+3. Rulează programul din **clasa `Main`**.
+
+### 🔹 Metoda 2 – din terminal
+
+1. Compilează programul:
+   ```bash
+   javac Main.java
+   ```
+
+Fișierul sample.txt trebuie să fie în UTF-8, cu câte un cuvânt pe linie.
+
+Exemplu:
+
+act
+
+cat
+
+tree
+
+race
+
+care
+
+acre
+
+bee
